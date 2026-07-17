@@ -17,3 +17,17 @@
 **Not yet done:** Amazon Associates click tracking (site is brand new, expect 0 clicks initially — same discovery-problem pattern seen on SetupRig/PetTrackr, this isn't a signal of a problem yet, just too early to have data).
 
 **Next priority:** Get 2-3 more launch articles built from real Amazon Best Sellers data across different categories (beauty/skincare, tech accessories, home organization are all categories with well-documented TikTok-to-Amazon crossover) — Jack can paste more live Best Sellers pages the same way he did for Kitchen & Dining, which is proving to be a faster and more reliable verification path than web search right now.
+
+## 2026-07-17 — Repo cleanup + click tracking instrumentation
+
+**Repo cleanup executed:** Jack confirmed the pivot noted above should actually happen at the account level, not just in narrative — `pettrackr` and `setuprig` were deleted from GitHub entirely so TrendTrackr is the only active project. This was done deliberately (not by accident): both were still live/GSC-verified per the note above, but Jack was explicit he wants a single focused site rather than three, and neither of the retired niches (pets, gaming/desk setups) matches the "viral trending products" direction he wants to grow.
+
+**Click tracking finally added:** The "Not yet done" item from launch day is done. GA4 (`gtag.js`) and a Pinterest tag are wired into both `index.html` and the water bottles article, both currently pointed at placeholder IDs (`G-XXXXXXXXXX` / `PINTEREST_TAG_ID_PLACEHOLDER`) — swap these for real IDs before trusting the numbers. Every Amazon affiliate link now fires a `affiliate_click` event with a `link_label` parameter unique to that product and placement (e.g. `owala_title`, `owala_button`), which is what lets per-product CTR actually be measured instead of guessed at. Scroll-depth tracking was added site-wide in 25% increments.
+
+**Homepage card upgraded:** Added a real, truthful ratings/best-seller-count line to the water bottles card on the homepage (data pulled directly from the article, nothing fabricated) and made the card title itself a second click-through entry point to the article, alongside the existing "Read the guide" button.
+
+**Pinterest save button added:** A "Save this guide to Pinterest" link was added to the article, since Pinterest is the intended free-traffic channel for this project. It shares the article URL directly; there's no dedicated Open Graph image yet, so Pinterest will fall back to whatever it can find on the page — a real product lifestyle image per article would meaningfully improve how these pins look once added.
+
+**Deliberately not added:** No fake urgency/scarcity copy ("selling out fast," countdown timers) and no fabricated discount percentages. TrendTrackr's whole positioning is "verified, not hype" — adding manufactured urgency would directly contradict the trust angle that differentiates this site from typical TikTok-finds listicles, so those competitor patterns were left out on purpose rather than missed.
+
+**Next priority (still open from before):** 2-3 more launch articles from real Amazon Best Sellers data in new categories, plus swapping the GA4/Pinterest placeholder IDs for real ones as soon as those accounts exist so click data actually starts flowing.

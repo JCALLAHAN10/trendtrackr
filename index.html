@@ -7,6 +7,41 @@
 <meta name="description" content="TikTok-viral products, checked against real Amazon Best Sellers data before we ever recommend them.">
 <meta name="google-site-verification" content="r_B2zjiQAnIxKXjJ2a3pDWvIfZDpIM44i33YSYHviGo" />
 <link rel="stylesheet" href="css/style.css">
+
+<!-- ================= ANALYTICS TRACKERS (placeholders — swap IDs before relying on the data) ================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // TODO: replace with your real GA4 Measurement ID
+</script>
+<script>
+  !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(
+  Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";
+  var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];
+  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+  pintrk('load', 'PINTEREST_TAG_ID_PLACEHOLDER'); // TODO: replace with your real Pinterest tag ID
+  pintrk('page');
+</script>
+<script>
+  // Shared click/scroll tracking helper — used on this page and every article page.
+  // This is what feeds the per-product CTR the CRO subagent script reads from GA4.
+  function ttTrack(eventName, label){
+    if (typeof gtag === 'function') gtag('event', eventName, { link_label: label });
+    if (typeof pintrk === 'function') pintrk('track', 'custom', { event_name: eventName, label: label });
+  }
+  window.addEventListener('DOMContentLoaded', function(){
+    let maxScroll = 0;
+    window.addEventListener('scroll', function(){
+      const scrollable = document.body.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const pct = Math.round((window.scrollY / scrollable) * 100);
+      if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%'); }
+    });
+  });
+</script>
+<!-- /================= END ANALYTICS TRACKERS ================= -->
 </head>
 <body>
 
@@ -35,9 +70,12 @@
 
 <div class="grid">
 <div class="card">
+<a href="articles/best-viral-water-bottles-tumblers.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','water_bottles_card_title')">
 <h3>Best TikTok-Viral Water Bottles &amp; Tumblers</h3>
+</a>
+<p class="rating" style="margin:0 0 4px;">3 picks &middot; 4.6&ndash;4.7&#9733; avg &middot; all verified Amazon Best Sellers</p>
 <p>Owala, Stanley Quencher, and HydroJug compared — all three independently verified as current Amazon Kitchen &amp; Dining Best Sellers, not just social media buzz.</p>
-<a class="btn" href="articles/best-viral-water-bottles-tumblers.html">Read the guide</a>
+<a class="btn" href="articles/best-viral-water-bottles-tumblers.html" onclick="ttTrack('article_click','water_bottles_card_button')">Read the guide</a>
 </div>
 </div>
 
@@ -50,7 +88,8 @@
 
 <footer class="site">
 <div class="wrap">
-&copy; 2026 TrendTrackr. As an Amazon Associate, we earn from qualifying purchases.
+<p style="margin: 0 0 10px;"><strong>Disclosure:</strong> TrendTrackr is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</p>
+<p style="margin:0;">&copy; 2026 TrendTrackr.</p>
 </div>
 </footer>
 
