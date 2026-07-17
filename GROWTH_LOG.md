@@ -86,3 +86,15 @@ Jack created a Pinterest **Business** account (username `jcallahan154`, display 
 - The OG/preview images + SEO meta + GA4 fix from the earlier commits.
 
 **Next lever for traffic:** more pins. One live article = one pin so far. Per the "post consistently" advice, the highest-value next step is 2–3 more verified articles (new Best Seller categories) → each becomes its own pin + board. That, plus getting the push through, is the path to compounding Pinterest traffic.
+
+## 2026-07-17 — 3 more pin variants published (4 total live)
+
+Jack asked for more pin variations with catchy, clickable hooks ("more upside the better"). Pinterest favors multiple distinct pin designs pointing at the same URL, so built 3 new 1000×1500 graphics — same brand system, three different psychological hooks, every claim still backed by the real Amazon data already in the article:
+
+1. **`pin-stanley-verdict.png`** — curiosity/controversy hook: "Is the Stanley Cup still worth it in 2026?" Big 201,823-ratings stat, honest tease that Stanley is no longer #1 (true — Owala is) and "who should still buy it anyway."
+2. **`pin-which-bottle.png`** — decision-helper hook: "Which viral water bottle is actually right for you?" 3-row if-you-want→answer key (versatility→Owala, ice retention→Stanley, capacity goal→HydroJug).
+3. **`pin-before-you-buy.png`** — receipts/verification hook: "Before you buy a 'TikTok viral' water bottle…" checklist of how picks are verified, "Only 3 passed the check."
+
+All 3 published to the same "Water Bottles & Tumblers" board, each with keyword-front-loaded titles/descriptions and linking to the live article. **4 pins total now live** on the account. Deliberately avoided fake-urgency hooks ("selling out fast!") — the catchiest angles used are curiosity, decision-help, and receipts, all of which the data actually supports.
+
+Note: a mid-publish wifi drop on Jack's machine silently ate the first attempt at pin #4 — caught it because the board count stayed at 3, re-published, verified the drafts queue emptied. Worth remembering: always verify pin count on the board after publishing, don't trust the form reset alone.
