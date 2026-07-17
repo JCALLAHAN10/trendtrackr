@@ -98,3 +98,20 @@ Jack asked for more pin variations with catchy, clickable hooks ("more upside th
 All 3 published to the same "Water Bottles & Tumblers" board, each with keyword-front-loaded titles/descriptions and linking to the live article. **4 pins total now live** on the account. Deliberately avoided fake-urgency hooks ("selling out fast!") — the catchiest angles used are curiosity, decision-help, and receipts, all of which the data actually supports.
 
 Note: a mid-publish wifi drop on Jack's machine silently ate the first attempt at pin #4 — caught it because the board count stayed at 3, re-published, verified the drafts queue emptied. Worth remembering: always verify pin count on the board after publishing, don't trust the form reset alone.
+
+## 2026-07-17 — Article #2 built: TikTok-viral beauty & skincare (verified live from Amazon)
+
+**Data source:** Jack's own Chrome browsing Amazon's live Beauty & Personal Care Best Sellers page (WebFetch is blocked by Amazon's robots.txt; the browser is not — it's a normal logged-in user viewing a public page). Captured the full top-30 with ranks, ratings, review counts, and extracted real ASINs from the page's own links.
+
+**Five picks, all currently ranked Best Sellers with genuine TikTok fame:**
+- Mighty Patch Original (B074PVTPBW) — #4, 4.6★, 184,821 ratings — "Best Overall"
+- BIODANCE Bio-Collagen Mask (B0B2RM68G2) — #8, 4.5★, 43,293 — "Viral Right Now"
+- COLOR WOW Dream Coat (B07FJ783ZG) — #7, 4.3★, 109,847 — "Best for Hair"
+- medicube Zero Pore Pads 2.0 (B09V7Z4TJG) — #2, 4.6★, 27,812 — "K-Beauty Pick"
+- essence Lash Princess (B00T0C9XRK) — #25, 4.3★, 415,774 — "Budget Icon"
+
+Deliberately skipped higher-ranked items with no real TikTok story (cotton swabs #1, hand soap, etc.) — rank alone doesn't equal "viral," and the site's premise is the intersection of both. No prices printed in the article (they drift; ranks/ratings dated by the "as of this writing" language).
+
+**Shipped in this commit:** `articles/best-tiktok-viral-beauty-skincare.html` (full guide, same analytics/ttTrack wiring, unique per-product click labels), homepage card + nav links on all pages, sitemap.xml entry, `images/og-beauty-skincare.png` + `images/pin-beauty-skincare.png`.
+
+**Sequencing note:** the beauty Pinterest pin is built and staged but deliberately NOT posted yet — the article URL 404s until the pending commits are pushed. Posting order once the push lands: verify article live → pin it → new "Beauty & Skincare" board → request GSC indexing for the new URL.
