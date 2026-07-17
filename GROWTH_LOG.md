@@ -31,3 +31,17 @@
 **Deliberately not added:** No fake urgency/scarcity copy ("selling out fast," countdown timers) and no fabricated discount percentages. TrendTrackr's whole positioning is "verified, not hype" — adding manufactured urgency would directly contradict the trust angle that differentiates this site from typical TikTok-finds listicles, so those competitor patterns were left out on purpose rather than missed.
 
 **Next priority (still open from before):** 2-3 more launch articles from real Amazon Best Sellers data in new categories, plus swapping the GA4/Pinterest placeholder IDs for real ones as soon as those accounts exist so click data actually starts flowing.
+
+## 2026-07-17 — Real GA4 property created, bug found and fixed in the CRO script
+
+**GA4 property created for real:** Jack asked to set things up for success, so rather than leave the GA4 tag as a placeholder, a real property was created directly (account "TrendTrackr", property "TrendTrackr", US/Los Angeles timezone, USD currency, Shopping industry, data-sharing settings left off except what's strictly required). Measurement ID **G-QZNTTBBY76** replaced the `G-XXXXXXXXXX` placeholder in both `index.html` and the article. The Pinterest tag is still a placeholder — no Pinterest business account exists yet to get a real tag ID from.
+
+**Custom dimension registered:** Created an event-scoped custom dimension "Link Label" mapped to the `link_label` event parameter (GA4 property 545982473). Without this, `click_optimizer_agent.py`'s GA4 Data API queries against `customEvent:link_label` would silently return nothing.
+
+**Bug found and fixed in click_optimizer_agent.py:** The scroll-depth query was written to look for a `customEvent:percent_scrolled` dimension that the site never actually sends — `ttTrack()` reuses the same `link_label` parameter for every event type (affiliate_click, article_click, scroll_depth, share_click), so there's no separate `percent_scrolled` parameter to query. Also, the per-product CTR query wasn't filtered by event name at all, which would have mixed clicks, scrolls, and shares together under one flat `link_label` breakdown. Both queries now filter on `eventName` explicitly (`affiliate_click` for CTR, `scroll_depth` for scroll depth) before grouping by `link_label`. This was caught and fixed before the script was ever run against real data, so no bad numbers went anywhere.
+
+**What's still needed before click_optimizer_agent.py can actually run:**
+1. A GCP service account with "Viewer" access on GA4 property `properties/545982473`, and its JSON key saved somewhere the script can read (`GA4_CREDENTIALS_JSON`). Not created yet — this involves generating a downloadable credential file, which needs to happen with Jack directly rather than unattended.
+2. Jack's own `ANTHROPIC_API_KEY` (tied to his own Claude billing — has to come from him).
+3. Real site traffic — the site is brand new, so even once wired up, `MIN_SESSIONS_FOR_CONFIDENCE` (200 sessions/week) won't be met for a while, and the script will correctly no-op until then.
+4. A real Pinterest tag ID, once a Pinterest business account exists (still just a placeholder).

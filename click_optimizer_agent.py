@@ -27,12 +27,16 @@ REQUIRED SETUP
   pip install anthropic google-analytics-data requests
 
 Environment variables (all required unless noted):
-  ANTHROPIC_API_KEY          Your Claude API key.
-  GA4_PROPERTY_ID            e.g. "properties/123456789" — set this once you've
-                             created a GA4 property and swapped the placeholder
-                             G-XXXXXXXXXX in the site's <head> for the real ID.
-  GA4_CREDENTIALS_JSON       Path to a GCP service-account JSON key with
-                             "Viewer" access on the GA4 property.
+  ANTHROPIC_API_KEY          Your Claude API key (from console.anthropic.com — this
+                             is tied to your own billing, so it has to come from you).
+  GA4_PROPERTY_ID            "properties/545982473" — this is TrendTrackr's real GA4
+                             property (created 2026-07-17, Measurement ID G-QZNTTBBY76,
+                             already live in index.html and the article). The
+                             `link_label` custom dimension this script queries is
+                             already registered in that property's Custom definitions.
+  GA4_CREDENTIALS_JSON       Path to a GCP service-account JSON key with "Viewer"
+                             access on the GA4 property above. Not yet created — see
+                             GROWTH_LOG.md for the 4 remaining steps to generate one.
   PINTEREST_ACCESS_TOKEN     Pinterest API access token (optional — if unset,
                              Pinterest metrics are skipped and noted as such).
   PINTEREST_AD_ACCOUNT_ID    Pinterest ad account ID (optional, same as above).
@@ -62,11 +66,25 @@ from anthropic import Anthropic
 try:
     from google.analytics.data_v1beta import BetaAnalyticsDataClient
     from google.analytics.data_v1beta.types import (
-        RunReportRequest, Dimension, Metric, DateRange,
+        RunReportRequest, Dimension, Metric, DateRange, FilterExpression, Filter,
     )
     GA4_AVAILABLE = True
 except ImportError:
     GA4_AVAILABLE = False
+
+
+def _event_name_filter(event_name):
+    """Build a GA4 dimension filter restricting a report to a single event name.
+
+    Necessary because every event type on this site (affiliate_click,
+    article_click, share_click, scroll_depth) reuses the same `link_label`
+    event parameter for its value — see ttTrack() in index.html/articles/*.html.
+    Without this filter, a report grouped by customEvent:link_label mixes
+    product clicks, scroll-depth percentages, and share clicks together.
+    """
+    return FilterExpression(
+        filter=Filter(field_name="eventName", string_filter=Filter.StringFilter(value=event_name))
+    )
 
 logging.basicConfig(
     level=logging.INFO,
@@ -267,12 +285,15 @@ def fetch_ga4_snapshot() -> PerformanceSnapshot:
         snapshot.bounce_rate = float(row.metric_values[1].value)
         snapshot.avg_engagement_seconds = float(row.metric_values[2].value)
 
-    # Per-link CTR, broken out by the custom `link_label` event parameter.
+    # Per-link CTR, broken out by the custom `link_label` event parameter —
+    # filtered to affiliate_click specifically, since that's the revenue-relevant
+    # metric and the same parameter name is reused by other event types.
     ctr_request = RunReportRequest(
         property=GA4_PROPERTY_ID,
         dimensions=[Dimension(name="customEvent:link_label")],
         metrics=[Metric(name="eventCount")],
         date_ranges=[DateRange(start_date=str(start), end_date=str(end))],
+        dimension_filter=_event_name_filter("affiliate_click"),
     )
     ctr_response = client.run_report(ctr_request)
     clicks_by_label = {
@@ -290,12 +311,15 @@ def fetch_ga4_snapshot() -> PerformanceSnapshot:
                 sum(snapshot.product_ctr.values()) / len(snapshot.product_ctr), 4
             )
 
-    # Median scroll depth from the `scroll_depth` custom event.
+    # Median scroll depth from the `scroll_depth` custom event — same
+    # `link_label` parameter, filtered to this event name, holding values
+    # like "25%", "50%", etc.
     scroll_request = RunReportRequest(
         property=GA4_PROPERTY_ID,
-        dimensions=[Dimension(name="customEvent:percent_scrolled")],
+        dimensions=[Dimension(name="customEvent:link_label")],
         metrics=[Metric(name="eventCount")],
         date_ranges=[DateRange(start_date=str(start), end_date=str(end))],
+        dimension_filter=_event_name_filter("scroll_depth"),
     )
     scroll_response = client.run_report(scroll_request)
     depths = []
