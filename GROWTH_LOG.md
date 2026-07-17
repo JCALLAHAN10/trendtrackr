@@ -67,3 +67,22 @@
 4. Pin the `pin-water-bottles.png` graphic already built, using the keyword-front-loaded description already wired into the article's share link.
 5. Consistent posting cadence going forward (daily/near-daily, per the tutorial) once there's more than one pin-worthy asset — batching all pinning into one day and going quiet is exactly what the "quietly stop your growth" warning is about.
 6. Swap the real Pinterest tag ID into `index.html`/article `pintrk('load', ...)` calls once the business account exists, replacing the current placeholder.
+
+## 2026-07-17 — Pinterest live: account set up + first pin published
+
+Jack created a Pinterest **Business** account (username `jcallahan154`, display name TrendTrackr) and handed over the browser to finish setup. Executed the launch checklist above, minus what's still gated:
+
+**Done:**
+- **Profile aligned to the site's positioning** — bio set to "TikTok-viral products, verified against real Amazon Best Seller data before we ever recommend them. Verified, not hype. New picks added regularly." (Jack explicitly confirmed the direction: best-sellers / kitchen / hydration, not the fashion/dupes angle a namesake account at the `trendtrackr` handle happens to use — that's a different person, not Jack's account.)
+- **First board created:** "Water Bottles & Tumblers" (public, keyword-named for Pinterest SEO rather than a generic label).
+- **First pin PUBLISHED and confirmed live** on the profile's Created tab: the `pin-water-bottles.png` graphic, titled "TikTok-Viral Water Bottles & Tumblers (2026): Owala vs Stanley vs HydroJug," keyword-rich description, linking directly to the live article (`.../articles/best-viral-water-bottles-tumblers.html`). This is the first real, free traffic path into the site — independent of the pending GitHub push, because the article page itself is already live.
+- Uploaded the pin image directly (the generated PNG staged to `/mnt/user-data/outputs/` so the Chrome uploader could read it), so posting did NOT require the site update to be pushed first.
+
+**Notably NOT done (deliberately):** Did not click through the multi-step "Describe your business" onboarding wizard Pinterest nudged — it's an unknown-length flow that may ask for more account/ad details, and it's not needed to post pins. Left for Jack to complete if/when he wants.
+
+**Still gated on the GitHub push (5 commits stacked locally, unpushed — token still needed):**
+- The Pinterest **website claim** (entered the URL + added the `p:domain_verify` meta tag to the repo, but it can't verify until that tag is live on the site) — needed for pin attribution + Pinterest analytics.
+- The real Pinterest conversion **tag ID** still a placeholder in the site's `pintrk('load', ...)`.
+- The OG/preview images + SEO meta + GA4 fix from the earlier commits.
+
+**Next lever for traffic:** more pins. One live article = one pin so far. Per the "post consistently" advice, the highest-value next step is 2–3 more verified articles (new Best Seller categories) → each becomes its own pin + board. That, plus getting the push through, is the path to compounding Pinterest traffic.
