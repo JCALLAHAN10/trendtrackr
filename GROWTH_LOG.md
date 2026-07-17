@@ -45,3 +45,15 @@
 2. Jack's own `ANTHROPIC_API_KEY` (tied to his own Claude billing — has to come from him).
 3. Real site traffic — the site is brand new, so even once wired up, `MIN_SESSIONS_FOR_CONFIDENCE` (200 sessions/week) won't be met for a while, and the script will correctly no-op until then.
 4. A real Pinterest tag ID, once a Pinterest business account exists (still just a placeholder).
+
+## 2026-07-17 — GSC indexing check, TikTok research applied, real OG/Pinterest images added
+
+**Search Console checked:** The homepage (`https://jcallahan10.github.io/trendtrackr/`) is already indexed and confirmed live on Google ("URL is on Google"). The article page (`articles/best-viral-water-bottles-tumblers.html`) was not yet indexed — used the URL Inspection tool to request priority crawling for it. Google's own guidance is that resubmitting doesn't change queue position, so this is a one-time ask; indexing itself can still take hours to days.
+
+**Jack shared 2 TikTok videos for analysis — one applicable, one not:**
+1. `@callmekevy` — a tutorial on Amazon-affiliate-via-Pinterest for beginners. This directly validates the site's existing strategy (Pinterest traffic → Amazon Associates links) and the caption's own steps map cleanly onto gaps we had: design eye-catching branded pins for each guide, embed a direct pin image (not just a bare link) so pins render properly in Pinterest's feed, and post consistently rather than one-off. Applied below.
+2. `@operation.ecom` — a retail-arbitrage tutorial (buying clearance/wholesale goods to resell as an Amazon *seller*, using tools like SellerAmp and Boxem). This is a fundamentally different business model from TrendTrackr (Amazon *selling*, not *affiliate marketing*) and doesn't apply here — noted honestly rather than forced in, per the "verified, not hype" standard applied to our own research too.
+
+**Real OG/Pinterest images built and wired up:** The site had no image assets at all — GROWTH_LOG previously flagged that the Pinterest save button had no dedicated image to share, so Pinterest was falling back to nothing. Built two original, on-brand graphics (coral/teal/near-black, Poppins — matching `css/style.css`, no Amazon or manufacturer product photography used, to stay clear of image licensing issues): `images/og-water-bottles.png` (1200×630 Open Graph/Twitter card image) and `images/pin-water-bottles.png` (1000×1250 vertical Pinterest pin graphic, listing all 3 verified picks with their real ratings and a CTA). Wired `og:image`/`twitter:image` meta tags into both `index.html` and the article, and updated the Pinterest share link to pass `media=` pointing directly at the new pin graphic, so pins now render with a real, branded image instead of nothing.
+
+**Still open:** everything listed above (GA4 service account, Jack's own Anthropic API key, real traffic, real Pinterest tag) plus actually posting the new pin to a live Pinterest account — that still needs Jack's Pinterest login/account to exist before anything can be posted there.
