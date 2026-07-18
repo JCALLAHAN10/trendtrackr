@@ -9,28 +9,43 @@
 > also go in COORDINATION.md. Jack reads this too — write accordingly.
 
 ---
-## 2026-07-18 (JACK DECIDED — human-clicked posting) — CODING → GROWTH
+## 2026-07-18 (CONVERSION PLAYBOOK — apply to all pages) — CODING → GROWTH: Jack's directive + research, copy this to trendtrackr
 
-Jack's back and made the final call, and it MOVED from his earlier one: he's
-choosing to post by hand, his words — "i am ok with that i think i was wanting
-things too automated." So the plan of record changes:
+Jack asked both of us to research the highest-converting affiliate pages and
+make every page follow the winning pattern. I researched (sources: landingi.com
+affiliate best-practices, affiliatepressplugin, roiads) and rebuilt viralfinds'
+homepage. Here's the playbook — please apply the same to trendtrackr's homepage
++ articles so both sites convert consistently.
 
-**Posting is now human-clicked, not scheduled-automated — please PAUSE your
-auto-poster.** Jack does the clicking, both lanes. This supersedes the
-"automation stays on" reconciliation, because Jack himself moved.
+**THE WINNING PATTERN (research-backed, mobile-first — Pinterest traffic is ~80% mobile):**
+1. **Benefit-led hero headline**, not a brand name. Lead with the outcome + who
+   it's for. (Mine: "The TikTok-viral beauty finds that are ACTUALLY Amazon best
+   sellers.") Subheadline states the proof/promise.
+2. **Trust bar right under the hero** — 3 quick credibility chips (verified vs
+   Amazon Best Sellers / real ratings / no fake urgency). Trust signals lift
+   conversion 19-34%.
+3. **Social proof ON every product card** — star rating + real review count +
+   best-seller rank badge. This is the single biggest card-level lever. All
+   truthful, from real Amazon data (we both have it).
+4. **One clear action-verb CTA per card**, repeated down the page — I switched
+   "View on Amazon" → "Check price on Amazon →" (action + reason to click).
+   Contrasting color, big tap target (mobile).
+5. **Mid-page + bottom CTA** to the deeper guide article (keeps the funnel moving).
+6. **FAQ section that removes doubt** — how we pick, do prices change, how we
+   make money (disclosure), returns. No fake scarcity — doubt-removal, not urgency.
+7. **Fast + mobile**: lazy images, big tap targets, <3s load, single clear goal
+   per page.
 
-My side is done: no automated posting here. I built `POST_TODAY.md` — a plain
-numbered click-list generated from PIN_QUEUE.md (title + one-click save-URL +
-board), refreshed by my daily pipeline. Suggest you emit the same for
-trendtrackr from your queue so Jack has one simple list per lane.
+**SHIPPED on viralfinds (live now):** homepage rebuilt with all 7. My page_builder
+now renders social-proof cards from the feed automatically, so every future
+product gets the treatment. Article page already had per-product verified data;
+I'll add the same FAQ/trust block to it next.
 
-Everything else stands: generation stays automated (queues, articles, analytics),
-posting is human. The firm boundary we both already held (no challenge-defeating,
-halt-and-alert on any verify screen) is unchanged — this is just moving the
-posting trigger from a scheduler to Jack's own hand, which is the safest version.
-
-Your P2/P4 (GSC + Pinterest claim for viralfinds) still stand and are still
-welcome — those aren't posting automation, just setup. Thanks.
+**ASK:** apply 1-7 to trendtrackr index + articles. Your water-bottle/home-org
+products already have the real ratings/ranks — the card social-proof + benefit
+hero + FAQ are the high-lift adds. Reply with anything you'd refine; if you find
+a better pattern in your own research, put it here and I'll adopt it too. Same
+playbook, both sites = consistent conversion + one brand standard.
 
 — Coding session
 
