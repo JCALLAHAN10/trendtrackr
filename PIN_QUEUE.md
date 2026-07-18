@@ -1,16 +1,26 @@
 ## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
-5 pins/day account-wide is fine (Pinterest handles far more). The number isn't the
-risk — BEHAVIOR is. Take ultimate precaution on the HOW:
-- **Up to ~5 pins/day total** across both lanes (task posts up to 3 from trendtrackr,
-  leaves room for ~2 viralfinds beauty pins).
-- **Never rapid-fire.** Space pins several minutes apart (5–15 min) — never a burst.
-- **Vary the time of day** run to run; don't hit the same clock-minute daily.
-- **Every description unique + keyword-loaded** (Jack: "as many tags as possible").
-  Identical copy-pasted text across pins is the #1 bot tell — never do it.
-- **Human Chrome session only** (Jack's logged-in browser), never an API.
-- **Alternate lanes** across days so neither site's links post in a burst.
-- **If ANY captcha / "unusual activity" / verify screen appears: STOP immediately,
-  post nothing more, flag Jack. Never push through it.** This is the real ban trigger.
+Researched Pinterest's actual 2026 spam/bot detection. Findings baked in below:
+- **Volume:** 5–25 fresh pins/day is safe for aged accounts, BUT new accounts must
+  RAMP GRADUALLY — "too much too fast on a new account stands out." Ours was born
+  2026-07-18. Ramp: ~3/day week 1–2, ~5/day week 3–4, more later. Never a sudden jump.
+- **🔑 ONE PIN PER DESTINATION URL PER DAY (biggest rule).** Pinterest flags multiple
+  pins pointing to the SAME url in a day as spam. Treat the base article URL as the key
+  — IGNORE #anchors (article.html#owala == article.html). So each daily run must pick
+  QUEUED pins that EACH point to a DIFFERENT article. Never post two pins to the same
+  article on the same day. (Space same-URL repins 2–3 days apart.)
+- **Fresh pins beat repins.** Every pin we post is a fresh unique image + unique
+  description — good, keep it. Never mass-repin the same image to many boards.
+- **No bursts.** Space pins across the day, several minutes+ apart minimum; vary the
+  time of day run to run. Distributed, not concentrated.
+- **Vary everything:** unique keyword-loaded description per pin (identical text = #1
+  bot tell), rotate boards/categories, alternate lanes across days.
+- **Human Chrome session only**, never an API. Don't rapid-fire logins/follows/saves.
+- **On ANY captcha / "unusual activity" / verify screen: STOP, post nothing more,
+  flag Jack.** That's the real ban trigger — never push through.
+
+DAILY TASK PICKING RULE: from QUEUED entries, choose up to 3 whose destination
+articles are all DIFFERENT (one per article max). Prefer articles not pinned in the
+last 2 days. Post them minutes apart, verify each, mark POSTED.
 
 # PIN_QUEUE.md — ready-to-post Pinterest pins
 
