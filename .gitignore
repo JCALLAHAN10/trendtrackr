@@ -1,1 +1,2 @@
 __pycache__/
+# token lives at /root/.tt_push_token (env-local, never commit)
