@@ -114,4 +114,4 @@ Deliberately skipped higher-ranked items with no real TikTok story (cotton swabs
 
 **Shipped in this commit:** `articles/best-tiktok-viral-beauty-skincare.html` (full guide, same analytics/ttTrack wiring, unique per-product click labels), homepage card + nav links on all pages, sitemap.xml entry, `images/og-beauty-skincare.png` + `images/pin-beauty-skincare.png`.
 
-**Sequencing note:** the beauty Pinterest pin is built and staged but deliberately NOT posted yet — the article URL 404s until the pending commits are pushed. Posting order once the push lands: verify article live → pin it → new "Beauty & Skincare" board → request GSC indexing for the new URL.
+**Sequencing note (updated):** the push landed — the beauty article IS live, GSC indexing has been requested for it, and real GA4 is confirmed firing site-wide. The beauty Pinterest pin is built and staged (`images/pin-beauty-skincare.png`) but **Jack explicitly asked to hold off on publishing it** — do NOT post the beauty pin or create the Beauty & Skincare board until Jack says go. (Pinterest's web app was also serving blank pages at end of session; unrelated to the hold.)
