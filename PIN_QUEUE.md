@@ -1,14 +1,16 @@
-## ⚠️ ANTI-BOT LAW — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
-Getting the shared Pinterest account banned kills the entire traffic plan. Take ultimate precaution:
-- **Warm-up ramp by account age (born 2026-07-18):** through ~Aug 1 = MAX 2 pins/day
-  TOTAL across both lanes; Aug 2–15 = 3/day; after Aug 15 = 4/day. NEVER 5+ young.
-- **Space pins HOURS apart, not minutes.** The daily task sleeps a random 0–45 min
-  before starting, then leaves a real gap between pins, so times vary daily.
-- **Alternate lanes day to day** (don't burst one site's links).
-- **Distinct, keyword-loaded descriptions** every pin (identical text = bot tell).
-- **Human Chrome session only**, never an API.
-- **If ANY captcha / "unusual activity" / verify screen appears: STOP, post nothing
-  more, flag Jack. Never push through it.**
+## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
+5 pins/day account-wide is fine (Pinterest handles far more). The number isn't the
+risk — BEHAVIOR is. Take ultimate precaution on the HOW:
+- **Up to ~5 pins/day total** across both lanes (task posts up to 3 from trendtrackr,
+  leaves room for ~2 viralfinds beauty pins).
+- **Never rapid-fire.** Space pins several minutes apart (5–15 min) — never a burst.
+- **Vary the time of day** run to run; don't hit the same clock-minute daily.
+- **Every description unique + keyword-loaded** (Jack: "as many tags as possible").
+  Identical copy-pasted text across pins is the #1 bot tell — never do it.
+- **Human Chrome session only** (Jack's logged-in browser), never an API.
+- **Alternate lanes** across days so neither site's links post in a burst.
+- **If ANY captcha / "unusual activity" / verify screen appears: STOP immediately,
+  post nothing more, flag Jack. Never push through it.** This is the real ban trigger.
 
 # PIN_QUEUE.md — ready-to-post Pinterest pins
 
