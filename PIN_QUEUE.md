@@ -18,13 +18,14 @@ Researched Pinterest's actual 2026 spam/bot detection. Findings baked in below:
 - **On ANY captcha / "unusual activity" / verify screen: STOP, post nothing more,
   flag Jack.** That's the real ban trigger — never push through.
 
-DAILY TASK PICKING RULE: from QUEUED entries, choose up to 3 whose destination
-articles are all DIFFERENT (one per article max). Prefer articles not pinned in the
-last 2 days. Post them minutes apart, verify each, mark POSTED.
+DAILY PICKING RULE (human poster — posting is human-clicked as of 2026-07-18, no
+auto-poster): from QUEUED entries, choose up to ~5 whose destination URLs are all
+DIFFERENT (one per URL/day). Prefer URLs not pinned in the last 2 days. Open each
+save-URL in your logged-in Chrome minutes apart, click Save, verify, mark POSTED.
 
 # PIN_QUEUE.md — ready-to-post Pinterest pins
 
-## POSTING RULES (the daily task + any human poster MUST follow these — Jack's directives)
+## POSTING RULES (human poster MUST follow these — Jack's directives; posting is human-clicked, auto-poster retired 2026-07-18)
 1. **Cap = ~5 pins/day TOTAL across both lanes** (Jack's call, 2026-07-18 — he
    confirmed 5/day is fine; the number isn't the risk, behavior is). Space them
    out (minutes+ apart, never a burst), vary the time of day, one pin per
