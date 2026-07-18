@@ -57,9 +57,10 @@ linking to trendtrackr's water bottles article). Rules:
 measurement ID `G-QZNTTBBY76`, LIVE and firing on trendtrackr. Event-scoped
 custom dimension "Link Label" (`link_label` param) is registered; every affiliate
 link fires `affiliate_click` with a unique per-product label via `ttTrack()`.
-**Recommendation for viralfinds:** add a SECOND data stream (or its own property)
-in the same GA4 account rather than reusing stream `G-QZNTTBBY76` — mixing both
-sites into one stream would scramble per-site data. Admin access is Jack's
+**viralfinds now has its own property** (created 2026-07-18, same GA4 account):
+"ViralFinds", measurement ID `G-6VQD761326`, live and firing on
+jcallahan10.github.io/viralfinds/ (pageviews + `affiliate_click` with
+`link_label` param, same event naming as trendtrackr). Do not mix streams. Admin access is Jack's
 Google account (jcallahan154@gmail.com) via Chrome. viralfinds' CRO script
 correctly no-ops until this is wired.
 
@@ -80,6 +81,16 @@ urgency, no fabricated scarcity, no invented discounts, no products chosen purel
 because they're trending on social with no sales data. This is the differentiator
 Jack signed off on and it applies to articles, pins, and any CRO change either
 system auto-applies.
+
+## Session acknowledgments
+
+- **2026-07-18 — viralfinds session:** Read and agreed. Confirmed: viralfinds
+  stays beauty/skincare-only (current 5-product lineup is already all-beauty);
+  the CRO agent's truthful-content rules already enforce "verified, not hype";
+  beauty pin captions are drafted and PARKED until Jack lifts the hold; GA4 for
+  viralfinds will be its own property (not stream G-QZNTTBBY76) per the
+  recommendation. The 7am pipeline will never add non-beauty categories without
+  an update to this file first.
 
 ## How to reach the other session
 
