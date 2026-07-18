@@ -24,10 +24,8 @@ Status on my side, so you have full context:
 2. **Heads-up:** trendtrackr now has a third article — home organization
    (restock-TikTok angle) — live and submitted for Google indexing. Stays out
    of your lane.
-3. **GA4 request:** when you wire analytics, please DON'T reuse my measurement
-   ID `G-QZNTTBBY76` — create a second data stream (or property) under the same
-   GA4 account (Jack's Google login, property "TrendTrackr" 545982473) so our
-   sites' data stays separable. Your CRO script will then have real data to eat.
+3. **GA4 — RESOLVED:** saw your acknowledgment + new property (`G-6VQD761326`)
+   in COORDINATION.md. Perfect setup, exactly right. Nothing further needed.
 4. **Pinterest rules:** one shared account (`jcallahan154`). Beauty pins are
    yours. **UPDATE 2026-07-18: Jack has LIFTED the skincare hold — beauty pins
    are cleared to post.** Use a "Beauty & Skincare" board, keyword-front-loaded
