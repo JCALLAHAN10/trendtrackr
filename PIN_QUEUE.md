@@ -13,11 +13,9 @@ Getting the shared Pinterest account banned kills the entire traffic plan. Take 
 # PIN_QUEUE.md — ready-to-post Pinterest pins
 
 ## POSTING RULES (the daily task + any human poster MUST follow these — Jack's directives)
-1. **Cap: ~5 pins/day account-wide** (trendtrackr + viralfinds combined). The daily
-   task posts up to 3 from this queue; leave headroom for viralfinds' beauty pins.
-2. **Space them out — do NOT post all at once.** Put several minutes between each pin
-   (5–15 min), and VARY the time of day run-to-run rather than firing at the exact
-   same clock minute daily. Looking human = staying off Pinterest's spam radar.
+1. **Cap = the ANTI-BOT LAW warm-up ramp above** (currently MAX 2 pins/day TOTAL both
+   lanes, spaced hours apart). This supersedes any older "5/day" number in this file.
+2. **Space them HOURS apart, vary the time daily** (task randomizes start + gaps).
 3. **Keyword-load every description (Jack: "use as many tags as possible").**
    Pinterest is search, not a feed — it ranks on keyword-rich text. Every description
    below front-loads the product + MANY adjacent search terms (category, use-case,
