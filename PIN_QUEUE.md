@@ -1,3 +1,15 @@
+## ⚠️ ANTI-BOT LAW — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
+Getting the shared Pinterest account banned kills the entire traffic plan. Take ultimate precaution:
+- **Warm-up ramp by account age (born 2026-07-18):** through ~Aug 1 = MAX 2 pins/day
+  TOTAL across both lanes; Aug 2–15 = 3/day; after Aug 15 = 4/day. NEVER 5+ young.
+- **Space pins HOURS apart, not minutes.** The daily task sleeps a random 0–45 min
+  before starting, then leaves a real gap between pins, so times vary daily.
+- **Alternate lanes day to day** (don't burst one site's links).
+- **Distinct, keyword-loaded descriptions** every pin (identical text = bot tell).
+- **Human Chrome session only**, never an API.
+- **If ANY captcha / "unusual activity" / verify screen appears: STOP, post nothing
+  more, flag Jack. Never push through it.**
+
 # PIN_QUEUE.md — ready-to-post Pinterest pins
 
 ## POSTING RULES (the daily task + any human poster MUST follow these — Jack's directives)
