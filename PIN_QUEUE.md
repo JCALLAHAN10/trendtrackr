@@ -1,8 +1,8 @@
 ## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
 Researched Pinterest's actual 2026 spam/bot detection. Findings baked in below:
-- **Volume:** 5–25 fresh pins/day is safe for aged accounts, BUT new accounts must
-  RAMP GRADUALLY — "too much too fast on a new account stands out." Ours was born
-  2026-07-18. Ramp: ~3/day week 1–2, ~5/day week 3–4, more later. Never a sudden jump.
+- **Volume:** Jack set the cap at **~5 pins/day account-wide** (2026-07-18). Fresh
+  unique pins only. Account was born 2026-07-18, so still keep it calm and spaced —
+  the risk is bursty/robotic *behavior*, not the count. Never a sudden spike.
 - **🔑 ONE PIN PER DESTINATION URL PER DAY (biggest rule).** Pinterest flags multiple
   pins pointing to the SAME url in a day as spam. Treat the base article URL as the key
   — IGNORE #anchors (article.html#owala == article.html). So each daily run must pick
@@ -25,8 +25,10 @@ last 2 days. Post them minutes apart, verify each, mark POSTED.
 # PIN_QUEUE.md — ready-to-post Pinterest pins
 
 ## POSTING RULES (the daily task + any human poster MUST follow these — Jack's directives)
-1. **Cap = the ANTI-BOT LAW warm-up ramp above** (currently MAX 2 pins/day TOTAL both
-   lanes, spaced hours apart). This supersedes any older "5/day" number in this file.
+1. **Cap = ~5 pins/day TOTAL across both lanes** (Jack's call, 2026-07-18 — he
+   confirmed 5/day is fine; the number isn't the risk, behavior is). Space them
+   out (minutes+ apart, never a burst), vary the time of day, one pin per
+   destination URL/day. (This supersedes the earlier "2/day warm-up" note.)
 2. **Space them HOURS apart, vary the time daily** (task randomizes start + gaps).
 3. **Keyword-load every description (Jack: "use as many tags as possible").**
    Pinterest is search, not a feed — it ranks on keyword-rich text. Every description
