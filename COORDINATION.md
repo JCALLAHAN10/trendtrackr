@@ -73,19 +73,12 @@ read-only: Pinterest analytics + GA4, push-notifies Jack on first
 impressions/clicks/sales signals). viralfinds runs its own 7am build pipeline.
 These don't conflict (one reads, one writes to its own repo) — keep it that way.
 
-## ⚠️ STAY-HUMAN RULES (researched Pinterest bot detection, 2026)
-Bot flag = catastrophic. Rules both sessions obey:
-1. **ONE pin per destination URL per day** (base URL key, ignore #anchors) — multiple
-   pins to the same url/day is the top spam trigger. Each day's pins must point to
-   DIFFERENT articles/pages. ⚠️ viralfinds is a SINGLE page — all its beauty pins share
-   one URL, so it can only safely post 1 beauty pin/day UNTIL it adds per-product
-   landing URLs (anchors or separate pages). Flagged in MESSAGES.md.
-2. **Ramp gradually on the young account** (born 07-18): ~3/day now, ~5/day in a couple
-   weeks. No sudden volume jumps.
-3. **Fresh unique pins only** (unique image + unique keyword-loaded description); no
-   mass-repinning, no identical copy-paste text.
-4. **No bursts** — space pins across the day, vary the time daily. Human Chrome, never API.
-5. **On captcha/verify/unusual-activity: STOP + flag Jack.** Never push through.
+## ⚠️ STAY-HUMAN RULES (Jack, 2026-07-18: bot flag = catastrophic)
+5 pins/day account-wide is fine — the number isn't the risk, behavior is. Never
+rapid-fire (space pins 5–15 min), vary time of day, EVERY description unique +
+keyword-loaded (identical text = #1 bot tell), human Chrome session only (never
+API), alternate lanes across days. On any captcha/verify/unusual-activity screen:
+STOP and flag Jack — never push through (that's the real ban trigger).
 
 ## Ads policy (Jack-approved, 2026-07-18)
 
@@ -107,7 +100,17 @@ Ultimate precaution, both sessions, no exceptions. The shared Pinterest account
 is a single point of failure — a flag kills BOTH lanes' traffic at once.
 
 **Pinterest:**
-- Hard cap ~5 pins/day account-wide; vary posting times day to day; never batch-blast.
+- RESEARCH-BACKED (2026-07-18, sources in viralfinds MESSAGES.md): Pinterest's
+  detectors key on (1) sudden activity spikes on NEW accounts, (2) same-time
+  batch posting, (3) keyword-stuffed descriptions, (4) many rapid pins to the
+  same URL, (5) repetitive titles/descriptions, (6) follow/unfollow automation,
+  (7) broken/redirecting links, (8) unlicensed images.
+- NEW-ACCOUNT RAMP (account is days old — day one already posted 6, a spike):
+  weeks 1-2 max 2-3 pins/day account-wide, then ease toward 5/day. Slower is safer.
+- Vary posting times daily (different hours, not a fixed slot); never batch-blast.
+- Max 1-2 pins per destination URL per day; alternate lanes/URLs between posts.
+- Descriptions are natural sentences containing keywords — never raw keyword
+  lists (that's the "keyword stuffing" signal). 3-4 hashtags max.
 - Every pin unique: distinct image, distinct description, distinct keyword set.
   Never post near-duplicates or re-pin our own content repeatedly.
 - Posting only — NO automated follows, comments, likes, DMs, or engagement of any
