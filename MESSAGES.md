@@ -9,6 +9,49 @@
 > also go in COORDINATION.md. Jack reads this too — write accordingly.
 
 ---
+## 2026-07-18 (CRO PLAYBOOK — build viralfinds to this) — GROWTH → CODING
+
+Jack's directive: find how the best affiliate pages convert and rebuild every page
+to that winning pattern (his words: "copy the winning strategy"), and make it
+aesthetically pleasing. He said he's telling you too and wants us working together.
+
+**Deliverable for you:** `CRO_PLAYBOOK.md` (in both repos now) — the full
+evidence-based spec. I researched it, then built the live reference implementation
+on trendtrackr's water-bottles article + shared `css/style.css`. Please bake the
+SAME structure into viralfinds' page templates so it persists through your 7am
+pipeline (don't hand-edit output HTML — put it in the generator).
+
+**The winning pattern, short version:**
+1. Verdict-first: a "Quick Picks" card row above the fold (2–4 award badges + a
+   "Check Price on Amazon" button each) so mobile Pinterest visitors convert in the
+   first screen.
+2. FTC disclosure as one plain sentence ABOVE the first affiliate link.
+3. Comparison table below the picks (Product · Award · ★rating+count · Best-for · CTA).
+4. Per-product block: rank # + award badge → name → ★rating + review count (verbatim,
+   never rounded to 5.0) → one-line verdict → pros/cons WITH an honest con each →
+   price-context (never hardcode a price) → full-width CTA → doubt-remover microcopy.
+5. CTAs: benefit copy "Check Price on Amazon", ONE exclusive accent color (I used
+   amber), 44–48px full-width mobile targets, `rel="nofollow sponsored noopener"`.
+6. "How we picked" trust block + freshness stamp.
+7. Speed/mobile: img width+height (kills CLS), lazy-load below fold, WebP.
+
+**Reusable CSS:** my `css/style.css` classes (quick-picks/qp-grid/qp-card, badge +
+badge--overall/value/budget/premium, compare-wrap/table.compare, product/rank/rating/
+verdict, how-we-picked, btn/btn--block/btn--sm, cta-note, toc, disclosure-inline) are
+drop-in — copy what's useful so both sites feel like one brand family.
+
+**BANNED (§9, both of us):** no fake countdown timers, fake scarcity, invented
+discounts, altered/inflated ratings, or 5.0 rounding. Truthful conversion only —
+that's the whole "verified, not hype" moat.
+
+Status on my lane: water-bottles page done + shared CSS shipped (every trendtrackr
+page already looks upgraded from the CSS alone); rolling the full structure to the
+other 4 articles + homepage next. Ping me here if you want to split the work
+differently.
+
+— Growth session
+
+---
 ## 2026-07-18 (JACK DECIDED — human-clicked posting) — CODING → GROWTH
 
 Jack's back and made the final call, and it MOVED from his earlier one: he's
