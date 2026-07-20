@@ -1,4 +1,4 @@
-—# TrendTrackr Growth Log
+# TrendTrackr Growth Log
 
 ## 2026-07-17 — Launch
 
@@ -140,3 +140,6 @@ Deliberately skipped higher-ranked items with no real TikTok story (cotton swabs
 **Also noted:** RANK_TRACKER.md referenced in the standing brief doesn't exist in this repo — rank data lives in the articles and this log, fine as-is. The four older article pages' navs don't yet link Travel Essentials (kept this run's diff small); add that link whenever those files are next touched.
 
 **Next priority:** pet tech gadgets article from CONTENT_BACKLOG (strongest remaining Pinterest category), request GSC indexing for the travel URL when someone is at the browser with Search Console open, and Jack: the Associates payment-info banner.
+
+
+**Update (2026-07-20, later):** Jack submitted the Associates payment information himself — the payout blocker flagged above is CLEARED. Remaining open items from this entry: the queued travel pin in PIN_QUEUE.md (human-clicked, whenever Jack picks it up) and the GSC indexing request for the new URL. (Also fixed in this commit: a stray character that a previous web-editor session left at the top of this file.)
