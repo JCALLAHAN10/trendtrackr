@@ -1,4 +1,4 @@
-# TrendTrackr Growth Log
+—# TrendTrackr Growth Log
 
 ## 2026-07-17 — Launch
 
