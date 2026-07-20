@@ -22,35 +22,35 @@
 <!-- ================= ANALYTICS TRACKERS (placeholders — swap IDs before relying on the data) ================= -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZNTTBBY76"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QZNTTBBY76'); // Real GA4 property: TrendTrackr (created 2026-07-17)
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QZNTTBBY76'); // Real GA4 property: TrendTrackr (created 2026-07-17)
 </script>
 <script>
-  !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(
-  Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";
-  var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];
-  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-  pintrk('load', 'PINTEREST_TAG_ID_PLACEHOLDER'); // TODO: still needs a real Pinterest tag ID (no Pinterest business account set up yet)
-  pintrk('page');
+!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(
+Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";
+var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];
+r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', 'PINTEREST_TAG_ID_PLACEHOLDER'); // TODO: still needs a real Pinterest tag ID (no Pinterest business account set up yet)
+pintrk('page');
 </script>
 <script>
-  // Shared click/scroll tracking helper — used on this page and every article page.
-  // This is what feeds the per-product CTR the CRO subagent script reads from GA4.
-  function ttTrack(eventName, label){
-    if (typeof gtag === 'function') gtag('event', eventName, { link_label: label });
-    if (typeof pintrk === 'function') pintrk('track', 'custom', { event_name: eventName, label: label });
-  }
-  window.addEventListener('DOMContentLoaded', function(){
-    let maxScroll = 0;
-    window.addEventListener('scroll', function(){
-      const scrollable = document.body.scrollHeight - window.innerHeight;
-      if (scrollable <= 0) return;
-      const pct = Math.round((window.scrollY / scrollable) * 100);
-      if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%'); }
-    });
-  });
+// Shared click/scroll tracking helper — used on this page and every article page.
+// This is what feeds the per-product CTR the CRO subagent script reads from GA4.
+function ttTrack(eventName, label){
+if (typeof gtag === 'function') gtag('event', eventName, { link_label: label });
+if (typeof pintrk === 'function') pintrk('track', 'custom', { event_name: eventName, label: label });
+}
+window.addEventListener('DOMContentLoaded', function(){
+let maxScroll = 0;
+window.addEventListener('scroll', function(){
+const scrollable = document.body.scrollHeight - window.innerHeight;
+if (scrollable <= 0) return;
+const pct = Math.round((window.scrollY / scrollable) * 100);
+if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%'); }
+});
+});
 </script>
 <!-- /================= END ANALYTICS TRACKERS ================= -->
 </head>
@@ -65,6 +65,7 @@
 <a href="articles/best-tiktok-viral-home-organization.html">Home Organization</a>
 <a href="articles/best-tiktok-viral-tech-accessories.html">Tech Accessories</a>
 <a href="articles/best-tiktok-viral-kitchen-gadgets.html">Kitchen Gadgets</a>
+<a href="articles/best-tiktok-viral-travel-essentials.html">Travel Essentials</a>
 </nav>
 </div>
 </header>
@@ -83,6 +84,14 @@
 <p style="color: var(--muted); margin-top: 4px;">Every guide verified against Amazon's live Best Sellers data before publishing.</p>
 
 <div class="grid">
+<div class="card">
+<a href="articles/best-tiktok-viral-travel-essentials.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','travel_card_title')">
+<h3>Best TikTok-Viral Travel Essentials</h3>
+</a>
+<p class="rating" style="margin:0 0 4px;">5 picks &middot; 165K+ combined ratings &middot; all verified Amazon Best Sellers</p>
+<p>The carry-on staples from every viral packing video — compression packing cubes, the #1 travel pillow, Anker's cable-built-in power bank, compression socks and a universal adapter, verified against Amazon's live Best Sellers rankings.</p>
+<a class="btn" href="articles/best-tiktok-viral-travel-essentials.html" onclick="ttTrack('article_click','travel_card_button')">Read the guide</a>
+</div>
 <div class="card">
 <a href="articles/best-tiktok-viral-tech-accessories.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','tech_card_title')">
 <h3>Best TikTok-Viral Tech Accessories</h3>
