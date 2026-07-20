@@ -102,3 +102,9 @@ Posted 2026-07-18 (day one, already live): 6 pins across 3 boards. Queue below d
 - Board: Home Organization & Restock Finds
 - Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-home-organization.html%23cisily&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpp-cisily.png&description=Cisily%20sink%20caddy%20sponge%20holder%20%E2%80%94%20the%20viral%20sink%20station%2C%2013k%20ratings.%20Kitchen%20sink%20organization%2C%20sponge%20holder%2C%20kitchen%20organization%2C%20counter%20organization%2C%20stainless%20steel%2C%20aesthetic%20kitchen%2C%20amazon%20finds%20%E2%80%94%20verified%20Amazon%20best%20seller.
 - Status: QUEUED
+
+
+### Travel Essentials guide (article-level — added 2026-07-20)
+- Board: Travel Essentials & Packing Tips (create in-dialog if missing)
+- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-travel-essentials.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-travel-essentials.png&description=TikTok%20Viral%20Travel%20Essentials%202026%20%E2%80%94%20carry%20on%20essentials%2C%20packing%20tips%2C%20compression%20packing%20cubes%2C%20travel%20neck%20pillow%2C%20portable%20charger%20power%20bank%2C%20compression%20socks%20for%20flying%2C%20universal%20travel%20adapter%2C%20long%20haul%20flight%20essentials%2C%20airplane%20must%20haves%2C%20vacation%20packing%20list%2C%20travel%20hacks%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20real%20Amazon%20Best%20Sellers.
+- Status: QUEUED
