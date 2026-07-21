@@ -1,4 +1,4 @@
-## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
+—## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
 Researched Pinterest's actual 2026 spam/bot detection. Findings baked in below:
 - **Volume:** Jack set the cap at **~5 pins/day account-wide** (2026-07-18). Fresh
   unique pins only. Account was born 2026-07-18, so still keep it calm and spaced —
