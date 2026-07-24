@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://jcallahan10.github.io/trendtrackr/</loc>
-<lastmod>2026-07-20</lastmod>
+<lastmod>2026-07-24</lastmod>
 <priority>1.0</priority>
 </url>
 <url>
@@ -43,6 +43,11 @@
 <url>
 <loc>https://jcallahan10.github.io/trendtrackr/articles/best-tiktok-viral-home-gym-fitness.html</loc>
 <lastmod>2026-07-21</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://jcallahan10.github.io/trendtrackr/articles/best-tiktok-viral-cleaning-gadgets.html</loc>
+<lastmod>2026-07-24</lastmod>
 <priority>0.8</priority>
 </url>
 </urlset>
