@@ -59,7 +59,11 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <header class="site">
 <div class="wrap">
 <div class="logo">Trend<span>Trackr</span></div>
-<nav class="site">
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle guide menu">
+<label for="nav-toggle" class="nav-burger" aria-label="Open guide menu"><span></span><span></span><span></span></label>
+<label for="nav-toggle" class="nav-scrim" aria-hidden="true"></label>
+<nav class="site" aria-label="Guides">
+<span class="nav-head">Browse guides</span>
 <a href="index.html">Home</a>
 <a href="articles/best-viral-water-bottles-tumblers.html">Water Bottles &amp; Tumblers</a>
 <a href="articles/best-tiktok-viral-home-organization.html">Home Organization</a>
@@ -77,8 +81,8 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <main>
 <div class="hero">
 <span class="eyebrow">Verified against real Amazon data</span>
-<h1>What's actually trending — checked before we ever recommend it.</h1>
-<p>Every product here is matched against Amazon's own Best Sellers rankings and live listings, not just social buzz. If it isn't a real, current, purchasable best-seller, it doesn't make the list.</p>
+<h1>Trending products, checked before we recommend them.</h1>
+<p>Everything here is matched against Amazon's own best-seller rankings and live listings. If a product isn't a real, current, purchasable best-seller, it doesn't make the list.</p>
 </div>
 
 <section class="disclosure">
@@ -98,7 +102,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Car Accessories</span>
 <a href="articles/best-tiktok-viral-car-accessories.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','car_card_title')"><h3>Best TikTok-Viral Car Accessories &amp; Organizers</h3></a>
 <p class="rating">5 picks &middot; 220K+ combined ratings &middot; verified live on Amazon</p>
-<p>The CarTok upgrades people actually keep — the DRIVE trunk organizer, the Shark Tank Drop Stop, HOTOR's leak-proof trash can, a Lusso Gear kick mat and a cup holder expander for your Stanley.</p>
+<p>Trunk organizers, seat-gap fillers and other car-organization essentials — including the DRIVE organizer, the Drop Stop and HOTOR's leak-proof trash can.</p>
 <a class="btn" href="articles/best-tiktok-viral-car-accessories.html" onclick="ttTrack('article_click','car_card_button')">Read the guide</a>
 </div>
 </div>
@@ -109,7 +113,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Cleaning Gadgets</span>
 <a href="articles/best-tiktok-viral-cleaning-gadgets.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','cleaning_card_title')"><h3>Best TikTok-Viral Cleaning Gadgets</h3></a>
 <p class="rating">5 picks &middot; 400K+ combined ratings &middot; verified live on Amazon</p>
-<p>The CleanTok tools people actually keep — the Bissell Little Green machine, The Pink Stuff paste, a cordless spin scrubber, the original Scrub Daddy and a drill-brush set.</p>
+<p>The most-reviewed cleaning tools on Amazon — the Bissell Little Green, The Pink Stuff, a cordless spin scrubber, Scrub Daddy and a drill-brush set.</p>
 <a class="btn" href="articles/best-tiktok-viral-cleaning-gadgets.html" onclick="ttTrack('article_click','cleaning_card_button')">Read the guide</a>
 </div>
 </div>
@@ -120,7 +124,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Home Gym &amp; Fitness</span>
 <a href="articles/best-tiktok-viral-home-gym-fitness.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','fitness_card_title')"><h3>Best TikTok-Viral Home Gym &amp; Fitness Gear</h3></a>
 <p class="rating">5 picks &middot; 220K+ combined ratings &middot; cross-checked on Amazon</p>
-<p>The small-space gear TikTok actually buys — an adjustable chest/arm twister trainer, ergonomic push-up bars, Fit Simplify resistance bands, a doorway pull-up bar and Amazon Basics' best-selling mat.</p>
+<p>Compact home-gym gear for small spaces — an adjustable chest/arm trainer, ergonomic push-up bars, Fit Simplify resistance bands, a doorway pull-up bar and Amazon Basics' best-selling mat.</p>
 <a class="btn" href="articles/best-tiktok-viral-home-gym-fitness.html" onclick="ttTrack('article_click','fitness_card_button')">Read the guide</a>
 </div>
 </div>
@@ -131,7 +135,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Pet Tech</span>
 <a href="articles/best-tiktok-viral-pet-tech.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','pettech_card_title')"><h3>Best TikTok-Viral Pet Tech</h3></a>
 <p class="rating">5 picks &middot; 60K+ combined ratings &middot; verified live on Amazon</p>
-<p>The gadgets "pet parent" TikTok actually keeps — the #1 Veken fountain, PETLIBRO's WiFi feeder, Furbo's treat-toss camera, Tractive GPS and a breakout under-$100 self-cleaning litter box.</p>
+<p>Smart pet gadgets worth the money — the #1 Veken fountain, PETLIBRO's WiFi feeder, Furbo's treat-toss camera, Tractive GPS and an under-$100 self-cleaning litter box.</p>
 <a class="btn" href="articles/best-tiktok-viral-pet-tech.html" onclick="ttTrack('article_click','pettech_card_button')">Read the guide</a>
 </div>
 </div>
@@ -142,7 +146,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Travel Essentials</span>
 <a href="articles/best-tiktok-viral-travel-essentials.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','travel_card_title')"><h3>Best TikTok-Viral Travel Essentials</h3></a>
 <p class="rating">5 picks &middot; 165K+ combined ratings &middot; verified Best Sellers</p>
-<p>The carry-on staples from every viral packing video — compression packing cubes, the #1 travel pillow, Anker's cable-built-in power bank, compression socks and a universal adapter.</p>
+<p>Carry-on travel essentials worth packing — compression packing cubes, the #1 travel pillow, Anker's cable-built-in power bank, compression socks and a universal adapter.</p>
 <a class="btn" href="articles/best-tiktok-viral-travel-essentials.html" onclick="ttTrack('article_click','travel_card_button')">Read the guide</a>
 </div>
 </div>
@@ -153,7 +157,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Tech Accessories</span>
 <a href="articles/best-tiktok-viral-tech-accessories.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','tech_card_title')"><h3>Best TikTok-Viral Tech Accessories</h3></a>
 <p class="rating">5 picks &middot; 300K+ combined ratings &middot; verified Best Sellers</p>
-<p>The "Amazon must-have" tech everyone films — the AirTag, the viral outlet extender, budget earbuds, ANC headphones and cable cleanup, checked against Amazon's live Electronics rankings.</p>
+<p>Everyday tech accessories worth owning — the AirTag, an outlet extender, budget earbuds, ANC headphones and cable organizers, checked against Amazon's live Electronics rankings.</p>
 <a class="btn" href="articles/best-tiktok-viral-tech-accessories.html" onclick="ttTrack('article_click','tech_card_button')">Read the guide</a>
 </div>
 </div>
@@ -164,7 +168,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Kitchen Gadgets</span>
 <a href="articles/best-tiktok-viral-kitchen-gadgets.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','kitchen_card_title')"><h3>Best TikTok-Viral Kitchen Gadgets</h3></a>
 <p class="rating">5 picks &middot; 300K+ combined ratings &middot; verified Best Sellers</p>
-<p>The oddly-satisfying cooking tools people actually keep — the Fullstar chopper, glass oil sprayer, instant-read thermometer and more, verified against Amazon's live Kitchen rankings.</p>
+<p>Practical kitchen tools that earn their counter space — the Fullstar chopper, a glass oil sprayer, an instant-read thermometer and more, verified against Amazon's live Kitchen rankings.</p>
 <a class="btn" href="articles/best-tiktok-viral-kitchen-gadgets.html" onclick="ttTrack('article_click','kitchen_card_button')">Read the guide</a>
 </div>
 </div>
@@ -175,7 +179,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Home Organization</span>
 <a href="articles/best-tiktok-viral-home-organization.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','homeorg_card_title')"><h3>Best TikTok-Viral Home Organization Finds</h3></a>
 <p class="rating">5 picks &middot; 370K+ combined ratings &middot; verified Best Sellers</p>
-<p>The "restock video" staples people are actually buying — Vtopmart drawer organizers, velvet hangers, Rubbermaid Brilliance and more, verified against Amazon's live Home Storage rankings.</p>
+<p>Home-organization staples that top the charts — Vtopmart drawer organizers, velvet hangers, Rubbermaid Brilliance and more, verified against Amazon's live Home Storage rankings.</p>
 <a class="btn" href="articles/best-tiktok-viral-home-organization.html" onclick="ttTrack('article_click','homeorg_card_button')">Read the guide</a>
 </div>
 </div>
@@ -186,7 +190,7 @@ if (pct >= maxScroll + 25) { maxScroll = pct; ttTrack('scroll_depth', pct + '%')
 <span class="card-eyebrow">Water Bottles &amp; Tumblers</span>
 <a href="articles/best-viral-water-bottles-tumblers.html" style="color:inherit; text-decoration:none;" onclick="ttTrack('article_click','water_bottles_card_title')"><h3>Best TikTok-Viral Water Bottles &amp; Tumblers</h3></a>
 <p class="rating">3 picks &middot; 4.6&ndash;4.7&#9733; avg &middot; verified Best Sellers</p>
-<p>Owala, Stanley Quencher and HydroJug compared — all three independently verified as current Amazon Kitchen &amp; Dining Best Sellers, not just social media buzz.</p>
+<p>Owala, Stanley Quencher and HydroJug compared — all three verified as current Amazon Kitchen &amp; Dining best-sellers.</p>
 <a class="btn" href="articles/best-viral-water-bottles-tumblers.html" onclick="ttTrack('article_click','water_bottles_card_button')">Read the guide</a>
 </div>
 </div>
