@@ -1,4 +1,4 @@
-—————————# TrendTrackr Growth Log
+# TrendTrackr Growth Log
 
 ## 2026-07-17 — Launch
 
@@ -200,3 +200,29 @@ Jack asked directly for a new category expansion: home gym/fitness, anchored by 
 **Still open (not fixed this run):** a stray line of em-dashes remains at the very top of this GROWTH_LOG file, immediately before the "# TrendTrackr Growth Log" heading (left by an old web-editor session). Cosmetic only; left alone to keep this run's edit an append-only, low-risk change. Worth a one-line cleanup next time the file is edited via full re-upload.
 
 **Next priority:** (1) a batch nav-consistency pass — the four oldest article pages still don't link the newest guides (Travel / Pet Tech / Home Gym / Cleaning); do it in one sweep next time those files are touched. (2) Next fresh category from CONTENT_BACKLOG, hand-verified live the same way. (3) Pinterest: pin-cleaning-gadgets.png is built and ready to queue in the cleaning lane (not under the beauty hold), but posting stays human-clicked per policy — nothing was posted anywhere this run.
+## 2026-07-28 — Article #10: TikTok-viral car accessories (CarTok), all 5 live-Amazon verified
+
+**Category pick:** This closes out CONTENT_BACKLOG.md — "Car accessories & organization" was the one researched brief (of four) never built; travel, pet and home-gym were already shipped. Squarely in trendtrackr's lane, no overlap with viralfinds (beauty). A genuinely new category for the site.
+
+**All 5 picks hand-verified against their live Amazon.com product pages today (2026-07-28)** — ASIN, star rating, rating count, price, stock and "Best Seller" badge read verbatim off each listing via the page DOM:
+- DRIVE Car Trunk Organizer (B071F82CYJ) — 4.7 stars, 72,958 ratings, $20.99, In Stock, Best Seller, 500+ bought/mo — "Best Overall" (the most-reviewed trunk organizer on Amazon by a wide margin).
+- Drop Stop Original Seat Gap Filler, 2-pack (B00BYH6C1E) — 4.6 stars, 74,299 ratings, $24.99, In Stock, Best Seller — "Cult Classic" (patented Shark Tank original; highest review count on the page).
+- HOTOR Car Trash Can, 2-gal leak-proof (B07VGRVKSN) — 4.5 stars, 54,733 ratings, $9.99, In Stock, Best Seller — "Best Under $10".
+- Lusso Gear Kick Mat Backseat Organizer (B01MXQJU7S) — 4.4 stars, 4,588 ratings, $19.95, In Stock, Best Seller, 100+ bought/mo — "Best for Families" (the backlog-flagged brand; fewest ratings here, flagged as an honest con in the article).
+- SEVEN SPARTA Cup Holder Expander (B07PMHPJJF) — 4.4 stars, 17,102 ratings, $9.98, In Stock, Best Seller — "Best for Big Tumblers" (fits Owala/Stanley/Yeti 32–40oz; deliberate cross-link to article #1's water-bottle picks).
+Combined ~223,700 ratings (headlined "220K+"). Trend angle cross-checked by web search ("CarTok viral car organization 2026") — CarTok is an active category and trunk organizers, seat-gap fillers, car trash cans, kick mats and cup-holder expanders are all canonical, so this is the real virality + purchasable intersection, not rank alone.
+
+**Verification method note:** the Automotive Best Sellers browse nodes render a personalized mix (same failure mode the travel/cleaning runs hit), so verification was done on live product detail pages. Search-result-page DOMs are too large for the find/get_page_text tools, so ASINs were pulled with a small JS query over each results page (data-asin attributes), then each /dp/<ASIN> page was opened and its fields read directly. Direct /dp/<ASIN>?tag=jcallahan1542-20 affiliate links used throughout.
+
+**Rejected / passed over (the honesty section):** a guessed DRIVE ASIN (B01M28JAV5) 404'd — a good reminder never to guess ASINs; the real B071F82CYJ came off the live search DOM. Trunk organizers: FORTEM (51.2K) and TrunkCratePro (25.9K) are strong but DRIVE's 72.9K leads, so DRIVE won. The seat-gap and cup-holder searches are both flooded with near-identical clones — picked the patented / badge-holding version of each (Drop Stop original; SEVEN SPARTA). Backseat organizer: Helteko carried a higher review count, but Lusso Gear is the cleaner branded pick with a Best Seller badge and was the backlog candidate — kept it and disclosed the lower count as a con.
+
+**Shipped this run (all deployed + verified live):** articles/best-tiktok-viral-car-accessories.html (full template match: quick-picks jump nav, compare table, 5 product blocks with pros/cons + honest cons, ttTrack labels trunkorg_/dropstop_/trashcan_/kickmat_/cupholder_ across _qp/_table/_button); index.html new homepage card (placed first) + nav link; sitemap.xml new entry (lastmod 2026-07-28) with homepage lastmod bumped; images/og-car-accessories.png (1200×630) + images/pin-car-accessories.png (1000×1500), original on-brand graphics (coral/teal on near-black, no product photography). Three commits landed (article, images, root); the repo went 100 → 103 commits. Confirmed live after the Pages rebuild via cache-busted checks: the article renders with full styling, the homepage card shows first, the nav links Car Accessories, both image assets return HTTP 200, and sitemap.xml serves the new URL.
+
+**GSC:** inspected the new URL — "URL is not on Google / unknown to Google" (expected for a brand-new page) — and Request Indexing succeeded ("URL was added to a priority crawl queue"). Homepage overview still 0 web-search clicks; property verified and healthy, just early.
+
+**Amazon Associates (already signed in this session, no login attempted):** Summary for This Month — 2 clicks (up from the 1 click noted 2026-07-20 / 2026-07-24), 0 orders, $0.00 earnings, 0.00% conversion, combined report for all tracking IDs, last updated Jul 27 2026. Payment info stays cleared (Jack submitted it 2026-07-20).
+
+**Housekeeping this run:** removed the stray leading em-dash line that sat above the "# TrendTrackr Growth Log" heading (left by an old web-editor session; safe to clean now since this was a full-file re-upload, as prior entries flagged).
+
+**Next priority:** (1) CONTENT_BACKLOG.md is now fully shipped (all four briefs live) — the next new category must be freshly researched, not pulled from the backlog. Candidates with TikTok/Amazon crossover not yet covered: "car tech" (dash cams / phone mounts / jump starters) as a sibling to this article, desk/office-tok accessories, coffee-tok gear, or sleep/wellness gadgets — hand-verify live the same way. (2) The batch nav-consistency sweep is still outstanding: the four oldest article pages don't link the newer guides (Travel / Pet Tech / Home Gym / Cleaning / Car) — do it in one pass next time those files are touched. (3) Pinterest: pin-car-accessories.png is built and ready to queue in the car lane (not under the beauty hold), but posting stays human-clicked per policy — nothing was posted anywhere this run.
+
