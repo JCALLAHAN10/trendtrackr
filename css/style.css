@@ -78,12 +78,42 @@ header.site .wrap {
   letter-spacing: -0.02em; color: var(--ink);
 }
 .logo span { color: var(--brand); }
-nav.site { display: flex; gap: 6px 20px; flex-wrap: wrap; }
-nav.site a {
-  color: var(--muted); text-decoration: none; font-weight: 500; font-size: 0.9rem;
-  transition: color .15s ease;
+/* ---- Hamburger + right-side slide-out drawer nav ---- */
+.nav-toggle { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.nav-burger {
+  display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+  width: 46px; height: 44px; padding: 0 11px; margin-left: auto; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 10px; background: #fff;
+  transition: border-color .15s ease;
 }
-nav.site a:hover { color: var(--brand-ink); }
+.nav-burger:hover { border-color: var(--border-lift); }
+.nav-burger span { display: block; height: 2px; width: 100%; background: var(--ink); border-radius: 2px; transition: transform .25s ease, opacity .2s ease; }
+
+nav.site {
+  position: fixed; top: 0; right: 0; z-index: 60;
+  height: 100vh; width: min(330px, 86vw);
+  background: #fff; border-left: 1px solid var(--border);
+  box-shadow: -24px 0 60px -32px rgba(20,18,15,0.5);
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 80px 20px 28px; overflow-y: auto;
+  transform: translateX(100%); transition: transform .3s cubic-bezier(.4,0,.2,1);
+}
+.nav-head { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted-2); padding: 0 12px 10px; }
+nav.site a {
+  color: var(--ink); text-decoration: none; font-weight: 500; font-size: 1rem;
+  padding: 12px; border-radius: 9px; transition: background .15s ease, color .15s ease;
+}
+nav.site a:hover { background: var(--bg-alt); color: var(--brand-ink); }
+
+.nav-scrim {
+  position: fixed; inset: 0; z-index: 55; background: rgba(20,18,15,0.4);
+  opacity: 0; pointer-events: none; transition: opacity .3s ease; cursor: pointer;
+}
+.nav-toggle:checked ~ nav.site { transform: translateX(0); }
+.nav-toggle:checked ~ .nav-scrim { opacity: 1; pointer-events: auto; }
+.nav-toggle:checked ~ .nav-burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle:checked ~ .nav-burger span:nth-child(2) { opacity: 0; }
+.nav-toggle:checked ~ .nav-burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ---------- Main / hero ---------- */
 main { max-width: 1080px; margin: 0 auto; padding: 40px 24px 96px; }
