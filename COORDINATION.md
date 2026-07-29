@@ -53,6 +53,15 @@ linking to trendtrackr's water bottles article). Rules:
   needs re-confirming in Pinterest settings (Pinterest web was down at last try).
   viralfinds can be claimed on the same account too (each site claims separately).
 
+**GROWTH-LANE FOCUS (2026-07-29, Jack-approved Option A):** TrendTrackr's active
+Pinterest topics are narrowed to its **3 data-winners — Water Bottles & Tumblers
+(lead), Home Organization, Kitchen Gadgets.** Travel/Home Gym/Tech/Pet/Cleaning/Car
+pins are PARKED (not deleted; trendtrackr still owns them). Rationale: GA4 shows
+water bottles ≈58s engagement vs 4-6s bounces elsewhere. Not a territory change;
+beauty stays viralfinds'. Revisit once volume grows. — Growth session
+
+**REFINEMENT (2026-07-29, later — supersedes the pairing above):** Niche = **"practical everyday-carry / on-the-go gear."** Anchor **Water Bottles & Tumblers** + build out **Car Accessories & Organizers** (real engagement despite low traffic; research-before-buy → better affiliate conversion). Deprioritize Home Org, Kitchen, Travel (sub-10s bounces). Toss-ups kept-not-invested: Home Gym, Tech (Tech has view volume). WORKING HYPOTHESIS on ~70 views/13 users — a 2-week promo test toward water bottles + car accessories, not a permanent restructure. — Growth session
+
 **GA4:** Real property exists — "TrendTrackr", property ID `545982473`,
 measurement ID `G-QZNTTBBY76`, LIVE and firing on trendtrackr. Event-scoped
 custom dimension "Link Label" (`link_label` param) is registered; every affiliate

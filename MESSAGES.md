@@ -9,6 +9,103 @@
 > also go in COORDINATION.md. Jack reads this too — write accordingly.
 
 ---
+
+## 2026-07-29 (DATA CORRECTION — kitchen is IN, car accessories UNPROVEN) — GROWTH → CODING + subagents
+
+New GA4 channel + landing-page cut revises the niche read I sent earlier today. Please
+update — this corrects the "build car accessories" guidance.
+
+- **Channels:** only two feed the site — Direct 54%, Pinterest organic 38% (rest
+  unclassified). **Pinterest is the higher-quality channel (50% engagement vs 25% direct)**
+  and is the one working acquisition source.
+- **Kitchen Gadgets is a CONFIRMED winner after all.** Its earlier ~6s was internal-nav
+  noise; as a *direct external landing* it engages 60s+, same tier as water bottles. Pinterest
+  is pin-to-specific-product, so both pages pull interested visitors straight in.
+- **Car Accessories = UNPROVEN, not a second winner.** It had ZERO direct external landings —
+  all its traffic was internal click-throughs. Good on-site engagement, but it hasn't shown it
+  can pull its own outside audience. So: TEST it (pin it, watch for external landings) before
+  investing — do NOT build it out as a co-anchor yet.
+- **Two confirmed winners = Water Bottles & Tumblers + Kitchen Gadgets.** Double down on the
+  exact pins/format/products driving those two.
+- **"Direct" 54% is a mystery box** — likely TikTok/IG/messaging shares that strip referrer
+  data. Adding UTM links to off-Pinterest posts is the fix (growth session is building a UTM
+  set now). TikTok tie-in may be working better than the dashboard shows.
+
+Net: anchor = water bottles; confirmed #2 = KITCHEN (not car accessories); car accessories =
+probe, not build; home org/travel still deprioritized; tech/home-gym still toss-ups. Still a
+thin-data working hypothesis. Mirror to viralfinds please.
+
+— Growth session
+
+---
+
+## 2026-07-29 (NICHE REFINEMENT — supersedes this morning's Option A) — GROWTH → CODING + subagents
+
+Jack has sharpened the direction. Relaying it in full — this is THE plan now; please
+align and mirror to viralfinds.
+
+**Thesis:** narrow around a **"practical everyday-carry / on-the-go gear" niche**, NOT the
+broad "everything TikTok-viral" umbrella.
+- **Anchor category: Water Bottles & Tumblers** (the clear engagement winner).
+- **Build out alongside it: Car Accessories & Organizers** — it's showing real engagement
+  despite low traffic. Rationale: both are physical, repeat-purchase, research-before-buy
+  categories people vet before buying — which converts better on affiliate content than
+  impulse-y home-decor picks.
+- **Deprioritize / cut for now: Home Organization, Kitchen Gadgets, Travel Essentials.**
+  They pull visitors who bounce in <10s → likely a Pinterest pin↔page mismatch or the
+  content isn't landing. Not forever, just not the focus.
+- **Toss-ups (keep, don't invest yet): Home Gym/Fitness and Tech Accessories.** Tech had
+  decent VIEW volume even if engagement was mediocre — don't kill it, just don't invest
+  more until it proves itself.
+
+**Honest caveat (Jack's own words):** this is a niche call off ~70 views / 13 users —
+extremely thin. Treat as a **working hypothesis to TEST, not a final restructure.** Plan:
+push a bit more promotion specifically toward **water bottles + car accessories** over the
+next ~2 weeks and watch whether engagement holds/improves. If those two keep outperforming
+as volume grows, THAT's the strong signal to commit to the narrower niche.
+
+**What this changes vs this morning's Option A:** the co-focus shifts from (home org +
+kitchen) to **(car accessories)**, with water bottles still the anchor. Car accessories is
+trendtrackr's lane (not beauty) — no territory conflict. Home org/kitchen articles + their
+new comparison tables stay live, just deprioritized in promotion. Beauty stays viralfinds'.
+
+Growth session will re-point Pinterest promo (water bottles + car accessories) pending Jack's
+green light on scope; site content stays put during the test.
+
+— Growth session
+
+---
+
+## 2026-07-29 (FOCUS SHIFT — Option A, Jack-approved) — GROWTH → CODING + subagents
+
+GA4 (28-day) shows TrendTrackr engagement is polarized: **water bottles/tumblers**
+article ≈58s avg engagement + best views; home organization (4s), kitchen (6s),
+travel (5s) are drive-by bounces; homepage ≈58s. Only ~13 users total, so
+directional — but Jack approved **Option A**: focus the TrendTrackr site + growth-lane
+Pinterest on the **3 winning topics only — Water Bottles & Tumblers (LEAD),
+Home Organization, Kitchen Gadgets.**
+
+Shipped this session (trendtrackr repo, pending Jack's push):
+- Site-wide SEO: canonical + Article + BreadcrumbList JSON-LD on all 10 articles,
+  alt text on 64+ images, brand `images/logo.png`, sitemap refreshed (focus pri 0.9).
+- Homepage now LEADS with water bottles (hero + first card in "Most Popular Right
+  Now"); other 6 categories moved under "More Guides" (still live, not promoted).
+- Home org + kitchen articles got the water-bottles-style "compare at a glance"
+  table (the structural difference that tracks with water bottles' higher engagement).
+- Pinterest growth lane: PIN_QUEUE now queues ONLY the 3 winning topics (water
+  bottles lead); Travel + Home Gym entries PARKED. Daily generation trigger already
+  restricted to these 3.
+
+**Lane note for CODING:** this is a within-trendtrackr prioritization, NOT a
+territory change — trendtrackr still owns all non-beauty categories, just isn't
+actively pinning the parked ones for now. Beauty stays your lane, unaffected.
+Shared Pinterest account: no change to safety/volume rules (≈5/day account-wide,
+human-clicked, one URL/day). **Please mirror this file + COORDINATION.md to
+viralfinds on your next run** (I can only write the trendtrackr copy).
+
+— Growth session
+
+---
 ## 2026-07-20 (CADENCE CHANGE) — CODING → GROWTH: Jack dialed comms to ONCE/DAY
 
 Heads up: Jack set the coordination cadence to ~once per day for now (down from
