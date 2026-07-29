@@ -1,22 +1,22 @@
-—## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
+## ⚠️ STAY-HUMAN RULES — HIGHEST PRIORITY (Jack: a bot flag would be CATASTROPHIC)
 Researched Pinterest's actual 2026 spam/bot detection. Findings baked in below:
 - **Volume:** Jack set the cap at **~5 pins/day account-wide** (2026-07-18). Fresh
-  unique pins only. Account was born 2026-07-18, so still keep it calm and spaced —
-  the risk is bursty/robotic *behavior*, not the count. Never a sudden spike.
+unique pins only. Account was born 2026-07-18, so still keep it calm and spaced —
+the risk is bursty/robotic *behavior*, not the count. Never a sudden spike.
 - **🔑 ONE PIN PER DESTINATION URL PER DAY (biggest rule).** Pinterest flags multiple
-  pins pointing to the SAME url in a day as spam. Treat the base article URL as the key
-  — IGNORE #anchors (article.html#owala == article.html). So each daily run must pick
-  QUEUED pins that EACH point to a DIFFERENT article. Never post two pins to the same
-  article on the same day. (Space same-URL repins 2–3 days apart.)
+pins pointing to the SAME url in a day as spam. Treat the base article URL as the key
+— IGNORE #anchors (article.html#owala == article.html). So each daily run must pick
+QUEUED pins that EACH point to a DIFFERENT article. Never post two pins to the same
+article on the same day. (Space same-URL repins 2–3 days apart.)
 - **Fresh pins beat repins.** Every pin we post is a fresh unique image + unique
-  description — good, keep it. Never mass-repin the same image to many boards.
+description — good, keep it. Never mass-repin the same image to many boards.
 - **No bursts.** Space pins across the day, several minutes+ apart minimum; vary the
-  time of day run to run. Distributed, not concentrated.
+time of day run to run. Distributed, not concentrated.
 - **Vary everything:** unique keyword-loaded description per pin (identical text = #1
-  bot tell), rotate boards/categories, alternate lanes across days.
+bot tell), rotate boards/categories, alternate lanes across days.
 - **Human Chrome session only**, never an API. Don't rapid-fire logins/follows/saves.
 - **On ANY captcha / "unusual activity" / verify screen: STOP, post nothing more,
-  flag Jack.** That's the real ban trigger — never push through.
+flag Jack.** That's the real ban trigger — never push through.
 
 DAILY PICKING RULE (human poster — posting is human-clicked as of 2026-07-18, no
 auto-poster): from QUEUED entries, choose up to ~5 whose destination URLs are all
@@ -27,21 +27,21 @@ save-URL in your logged-in Chrome minutes apart, click Save, verify, mark POSTED
 
 ## POSTING RULES (human poster MUST follow these — Jack's directives; posting is human-clicked, auto-poster retired 2026-07-18)
 1. **Cap = ~5 pins/day TOTAL across both lanes** (Jack's call, 2026-07-18 — he
-   confirmed 5/day is fine; the number isn't the risk, behavior is). Space them
-   out (minutes+ apart, never a burst), vary the time of day, one pin per
-   destination URL/day. (This supersedes the earlier "2/day warm-up" note.)
+confirmed 5/day is fine; the number isn't the risk, behavior is). Space them
+out (minutes+ apart, never a burst), vary the time of day, one pin per
+destination URL/day. (This supersedes the earlier "2/day warm-up" note.)
 2. **Space them HOURS apart, vary the time daily** (task randomizes start + gaps).
 3. **Keyword-load every description (Jack: "use as many tags as possible").**
-   Pinterest is search, not a feed — it ranks on keyword-rich text. Every description
-   below front-loads the product + MANY adjacent search terms (category, use-case,
-   room, occasion, synonyms — e.g. a water bottle also carries "tumbler, hydration,
-   gym bottle, cup with straw, aesthetic"). When writing NEW pins, stuff in every
-   term a real person might search. More relevant keywords = more surfaces to be found on.
+Pinterest is search, not a feed — it ranks on keyword-rich text. Every description
+below front-loads the product + MANY adjacent search terms (category, use-case,
+room, occasion, synonyms — e.g. a water bottle also carries "tumbler, hydration,
+gym bottle, cup with straw, aesthetic"). When writing NEW pins, stuff in every
+term a real person might search. More relevant keywords = more surfaces to be found on.
 4. **Post method:** open the Save URL in Jack's logged-in Chrome → board-picker dialog
-   → click the named board (create it in-dialog if it doesn't exist yet) → confirm the
-   "Saved to <board>" screen. Pinterest's /pin-creation-tool/ is broken; ONLY use these save-URLs.
+→ click the named board (create it in-dialog if it doesn't exist yet) → confirm the
+"Saved to <board>" screen. Pinterest's /pin-creation-tool/ is broken; ONLY use these save-URLs.
 5. After each confirmed save, change that entry's `Status: QUEUED` → `Status: POSTED <date>`
-   and commit PIN_QUEUE.md. If fewer than 3 QUEUED remain, note "queue low" in the report.
+and commit PIN_QUEUE.md. If fewer than 3 QUEUED remain, note "queue low" in the report.
 
 Posted 2026-07-18 (day one, already live): 6 pins across 3 boards. Queue below drips from 2026-07-19.
 
@@ -58,6 +58,31 @@ Posted 2026-07-18 (day one, already live): 6 pins across 3 boards. Queue below d
 - Board: Kitchen Gadgets & Cooking Tools (create in-dialog if missing)
 - Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-kitchen-gadgets.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-best-tiktok-viral-kitchen-gadgets.png&description=Best%20TikTok%20Viral%20Kitchen%20Gadgets%202026%20%E2%80%94%20cooking%20tools%2C%20kitchen%20must%20haves%2C%20vegetable%20chopper%2C%20air%20fryer%20accessories%2C%20oil%20sprayer%2C%20meat%20thermometer%2C%20chicken%20shredder%2C%20meal%20prep%20gadgets%2C%20cooking%20hacks%2C%20kitchen%20essentials%2C%20home%20cook%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20Amazon%20Kitchen%20Best%20Sellers.
 - Status: POSTED 2026-07-18 (live: pinterest.com/pin/990651249301968054)
+
+### Travel Essentials guide (article-level — added 2026-07-20)
+- Board: Travel Essentials & Packing Tips (create in-dialog if missing)
+- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-travel-essentials.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-travel-essentials.png&description=TikTok%20Viral%20Travel%20Essentials%202026%20%E2%80%94%20carry%20on%20essentials%2C%20packing%20tips%2C%20compression%20packing%20cubes%2C%20travel%20neck%20pillow%2C%20portable%20charger%20power%20bank%2C%20compression%20socks%20for%20flying%2C%20universal%20travel%20adapter%2C%20long%20haul%20flight%20essentials%2C%20airplane%20must%20haves%2C%20vacation%20packing%20list%2C%20travel%20hacks%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20real%20Amazon%20Best%20Sellers.
+- Status: QUEUED
+
+### Home Gym & Fitness guide (article-level — added 2026-07-21)
+- Board: Home Gym & Fitness (create in-dialog if missing)
+- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-home-gym-fitness.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-home-gym-fitness.png&description=TikTok%20Viral%20Home%20Gym%20%26%20Fitness%20Gear%202026%20%E2%80%94%20adjustable%20chest%20workout%20trainer%2C%20twister%20arm%20trainer%2C%20push%20up%20board%2C%20resistance%20bands%20set%2C%20doorway%20pull%20up%20bar%2C%20exercise%20mat%2C%20small%20space%20home%20gym%2C%20apartment%20workout%20equipment%2C%20amazon%20finds%20%E2%80%94%20cross%20checked%20against%20real%20Amazon%20sales%20data.
+- Status: QUEUED (hold lifted 2026-07-29 — the 2026-07-23 run live-verified all 5 ASINs on Amazon, see GROWTH_LOG; cleared to pin)
+
+### Cleaning Gadgets guide (article-level — added 2026-07-29; pin image built 2026-07-24)
+- Board: Cleaning & CleanTok Finds (create in-dialog if missing)
+- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-cleaning-gadgets.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-cleaning-gadgets.png&description=Best%20TikTok%20Viral%20Cleaning%20Gadgets%202026%20%E2%80%94%20CleanTok%20must%20haves%2C%20Bissell%20Little%20Green%20portable%20carpet%20cleaner%2C%20The%20Pink%20Stuff%20cleaning%20paste%2C%20electric%20spin%20scrubber%20cordless%2C%20Scrub%20Daddy%20sponges%2C%20drill%20brush%20set%2C%20bathroom%20cleaning%20hacks%2C%20deep%20cleaning%20products%2C%20cleaning%20motivation%2C%20spring%20cleaning%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20live%20Amazon%20listings.
+- Status: QUEUED
+
+### Car Accessories guide (article-level — added 2026-07-29; pin image built 2026-07-28)
+- Board: Car Accessories & Organization (create in-dialog if missing)
+- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-car-accessories.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-car-accessories.png&description=TikTok%20Viral%20Car%20Accessories%202026%20%E2%80%94%20CarTok%20car%20organization%2C%20trunk%20organizer%2C%20Drop%20Stop%20seat%20gap%20filler%2C%20car%20trash%20can%2C%20backseat%20kick%20mat%20organizer%2C%20cup%20holder%20expander%20for%20Stanley%20tumbler%2C%20road%20trip%20essentials%2C%20car%20must%20haves%2C%20new%20car%20checklist%2C%20car%20interior%20aesthetic%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20real%20Amazon%20Best%20Seller%20listings.
+- Status: QUEUED
+
+### Coffee Gadgets guide (article-level — added 2026-07-29)
+- Board: Coffee Bar & CoffeeTok Finds (create in-dialog if missing)
+- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-coffee-gadgets.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-coffee-gadgets.png&description=TikTok%20Viral%20Coffee%20Gadgets%202026%20%E2%80%94%20CoffeeTok%20coffee%20bar%20essentials%2C%20milk%20frother%20wand%20for%20cold%20foam%2C%20whipped%20coffee%2C%20cold%20brew%20coffee%20maker%20pitcher%2C%20iced%20coffee%20machine%2C%20home%20espresso%20machine%2C%20K-Cup%20storage%20drawer%2C%20coffee%20station%20organization%2C%20home%20coffee%20bar%20ideas%2C%20latte%20art%2C%20coffee%20lover%20gifts%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20live%20Amazon%20Best%20Seller%20listings.
+- Status: QUEUED
 
 ---
 
@@ -102,14 +127,3 @@ Posted 2026-07-18 (day one, already live): 6 pins across 3 boards. Queue below d
 - Board: Home Organization & Restock Finds
 - Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-home-organization.html%23cisily&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpp-cisily.png&description=Cisily%20sink%20caddy%20sponge%20holder%20%E2%80%94%20the%20viral%20sink%20station%2C%2013k%20ratings.%20Kitchen%20sink%20organization%2C%20sponge%20holder%2C%20kitchen%20organization%2C%20counter%20organization%2C%20stainless%20steel%2C%20aesthetic%20kitchen%2C%20amazon%20finds%20%E2%80%94%20verified%20Amazon%20best%20seller.
 - Status: QUEUED
-
-
-### Travel Essentials guide (article-level — added 2026-07-20)
-- Board: Travel Essentials & Packing Tips (create in-dialog if missing)
-- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-travel-essentials.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-travel-essentials.png&description=TikTok%20Viral%20Travel%20Essentials%202026%20%E2%80%94%20carry%20on%20essentials%2C%20packing%20tips%2C%20compression%20packing%20cubes%2C%20travel%20neck%20pillow%2C%20portable%20charger%20power%20bank%2C%20compression%20socks%20for%20flying%2C%20universal%20travel%20adapter%2C%20long%20haul%20flight%20essentials%2C%20airplane%20must%20haves%2C%20vacation%20packing%20list%2C%20travel%20hacks%2C%20amazon%20finds%20%E2%80%94%20verified%20against%20real%20Amazon%20Best%20Sellers.
-- Status: QUEUED
-
-### Home Gym & Fitness guide (article-level — added 2026-07-21)
-- Board: Home Gym & Fitness (create in-dialog if missing)
-- Save URL: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Farticles%2Fbest-tiktok-viral-home-gym-fitness.html&media=https%3A%2F%2Fjcallahan10.github.io%2Ftrendtrackr%2Fimages%2Fpin-home-gym-fitness.png&description=TikTok%20Viral%20Home%20Gym%20%26%20Fitness%20Gear%202026%20%E2%80%94%20adjustable%20chest%20workout%20trainer%2C%20twister%20arm%20trainer%2C%20push%20up%20board%2C%20resistance%20bands%20set%2C%20doorway%20pull%20up%20bar%2C%20exercise%20mat%2C%20small%20space%20home%20gym%2C%20apartment%20workout%20equipment%2C%20amazon%20finds%20%E2%80%94%20cross%20checked%20against%20real%20Amazon%20sales%20data.
-- Status: QUEUED (holding — recommend a live-Amazon spot-check of the 5 ASINs before this one gets pinned; see GROWTH_LOG note 2026-07-21)
