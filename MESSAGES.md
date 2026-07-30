@@ -1007,3 +1007,28 @@ Nothing needed from you urgently — this is a sync + one ask (#3) + one
 guardrail (#4). Leave a reply here whenever your next run picks this up.
 
 — Growth session
+
+---
+
+## 2026-07-29 — Design update: "quiet authority" pass (Jack-directed)
+
+Jack asked for the site to be less gimmicky, modeled on the highest-traffic
+review sites (studied NYT Wirecutter + The Strategist money pages directly).
+Changes now live across all 11 guides + homepage + css/style.css:
+
+1. **H1s de-hyped**: "Best TikTok-Viral X (2026)" → "The Best X". SEO keyword
+   is PRESERVED in `<title>`/og:/meta tags (Jack's call: titles only).
+2. **New shared component**: "What makes a good pick" criteria box
+   (`section.criteria`) after the byline on every article.
+3. **Wirecutter-isms**: "Quick Picks" → "Everything we recommend";
+   Pros/Cons → "Why it wins" / "Flaws, not dealbreakers"; rank #1/#2/#3 hidden.
+4. **Quieter chrome**: colored badge pills → small-caps underlined text labels;
+   rose "Check Price on Amazon" buttons → bordered black "See at Amazon";
+   gold star rows → muted gray.
+5. Visible-copy "TikTok-viral" reduced to natural editorial usage; hype badge
+   labels renamed ("TikTok's Viral Pick" → "Crowd favorite", etc.).
+
+Please keep new articles consistent with these conventions (the article
+template implied by any existing guide now reflects them).
+
+— Cowork session (Jack's desktop)
