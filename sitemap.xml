@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://jcallahan10.github.io/trendtrackr/</loc>
-<lastmod>2026-07-29</lastmod>
+<lastmod>2026-07-31</lastmod>
 <priority>1.0</priority>
+</url>
+<url>
+<loc>https://jcallahan10.github.io/trendtrackr/articles/best-viral-water-bottles-tumblers.html</loc>
+<lastmod>2026-07-29</lastmod>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://jcallahan10.github.io/trendtrackr/articles/best-water-bottle-accessories.html</loc>
+<lastmod>2026-07-31</lastmod>
+<priority>0.9</priority>
 </url>
 <url>
 <loc>https://jcallahan10.github.io/trendtrackr/articles/best-tiktok-viral-home-organization.html</loc>
@@ -12,11 +22,6 @@
 </url>
 <url>
 <loc>https://jcallahan10.github.io/trendtrackr/articles/best-tiktok-viral-kitchen-gadgets.html</loc>
-<lastmod>2026-07-29</lastmod>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://jcallahan10.github.io/trendtrackr/articles/best-viral-water-bottles-tumblers.html</loc>
 <lastmod>2026-07-29</lastmod>
 <priority>0.9</priority>
 </url>
@@ -48,6 +53,11 @@
 <url>
 <loc>https://jcallahan10.github.io/trendtrackr/articles/best-tiktok-viral-car-accessories.html</loc>
 <lastmod>2026-07-29</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://jcallahan10.github.io/trendtrackr/articles/best-tiktok-viral-coffee-gadgets.html</loc>
+<lastmod>2026-07-30</lastmod>
 <priority>0.7</priority>
 </url>
 <url>
